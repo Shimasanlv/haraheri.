@@ -26,6 +26,16 @@
   <div class="scroll-area">
     <img src="bottomm.jpg" class="bottomm-img">
   </div>
+<script>
+window.addEventListener("load", () => {
+  const header = document.querySelector(".header");
+  const scroll = document.querySelector(".scroll-area");
 
+  const h = header.offsetHeight;
+
+  scroll.style.marginTop = h + "px";
+  scroll.style.height = "calc(100vh - " + h + "px)";
+});
+</script>
 </body>
 </html>
